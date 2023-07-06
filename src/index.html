@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>My First Parcel App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.scss" />
+  </head>
+  <body>
+
+    <div id="animated-globe" class="loginForm-ow login-page"><div class="login-iw" style="top: 170px; left: -230px;">
+        <div class="form-title login-title"><div class="version">Версия DataGate: 1.23.5.15</div><img src="static/logo.svg" /></div>
+            <form id="login-form" class="ui form" method="post" action="/login" autocomplete="off">   
+                <input name="name" type="text" autocomplete="off" hidden="">
+                <input name="password" type="password" autocomplete="new-password" hidden="">
+                <div class="field">
+                    <div class="ui left icon input"> 
+                        <input name="user-name" placeholder="Имя пользователя" type="text" value="" autocomplete="off">
+                        <i class="ui icon user"></i>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input"> 
+                        <i class="ui icon lock"></i>
+                        <input name="user-password" placeholder="Пароль" type="text" autocomplete="current-password">                        
+                    </div>
+                </div>
+                <div style="display: flex; padding-top: 20px; margin: 0 -5px; flex-wrap: wrap;">
+                    <button type="button" class="ui primary button unlock-button">Войти в систему</button>
+                    <div class="ui green button disabled">Зарегистрироваться</div>
+                </div>  
+            </form>
+        </div>
+    </div>
+
+  </body>
+  <script src="three.min.js"></script>
+  <script src="vanta.birds.min.js"></script>
+  <script src="vanta.globe.min.js"></script>
+  <script src="app.js"></script>
+</html>
