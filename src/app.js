@@ -1,7 +1,6 @@
 
 VANTA.BIRDS({
-    el: "#animated-bg",
-    scaleMobile: 1.00,
+    el: "#animated-birds",
     mouseControls: true,
     touchControls: true,
     gyroControls: false,

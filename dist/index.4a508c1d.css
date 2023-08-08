@@ -1,144 +1,120 @@
-#animated-bg {
+#animated-birds, #animated-globe {
   position: absolute;
   inset: 0;
 }
 
-.loginForm-ow {
-  background: radial-gradient(circle at 50% 0, #1a69a4, #f000 70.71%), radial-gradient(circle at 6.7% 75%, #0000ff80, #00f0 70.71%), beige radial-gradient(circle at 93.3% 75%, #21ba4580, #21ba4500 70.71%);
-  padding: 1em;
-  display: flex;
+*, :after, :before {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+#login-card {
+  border-radius: 3px;
+  padding: 3rem;
   position: absolute;
-  inset: 0;
+  top: 30%;
+  left: 300px;
 }
 
-.loginForm-ow .login-iw {
-  background: #fff3;
-  min-width: 280px;
-  max-width: 440px;
-  max-height: 100vh;
-  margin: 0 auto auto;
-  padding: 20px 40px;
-  top: -1000px;
+.form {
+  width: 300px;
+  padding: 64px 15px 24px;
 }
 
-.loginForm-ow .login-iw .button {
-  white-space: nowrap;
-  flex: 1;
-  margin: 0 5px 10px;
+.form .control {
+  margin: 0 0 24px;
 }
 
-.loginForm-ow .login-iw .close {
-  cursor: pointer;
-  opacity: .4;
-  font-size: 40px;
-  transition: opacity .1s;
-  position: fixed;
-  top: 20px;
-  right: 10px;
+.form .control input {
+  color: #222;
+  background: none;
+  border: 0;
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
 }
 
-.loginForm-ow .login-iw .close:hover {
-  opacity: 1;
+.form .control input:hover, .form .control input:focus {
+  border: 0;
+  outline: none;
 }
 
-.loginForm-ow.login-page .login-iw {
-  padding: 60px 40px 20px;
-}
-
-.loginForm-ow .login-iw.error {
-  animation: .5s infinite shake;
-}
-
-.loginForm-ow .login-iw.error input {
-  background: #ff000014;
-  border: 1px solid #f44336;
-}
-
-.loginForm-ow .login-iw > .form {
-  padding: 0;
-}
-
-.login-iw .form_title {
-  background-color: #f2c03733;
-  border: 2px solid #f2c037;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  padding: 9px;
-  font-size: 14px;
-  font-weight: 600;
-  display: flex;
-}
-
-.login-iw .form_title i {
-  color: #f2c037;
-  margin: 9px 10px 0 auto;
-  font-size: 42px;
+.form .btn {
+  color: #fff;
+  letter-spacing: .1em;
+  background: none;
+  border: 0;
+  outline: none;
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: bold;
   display: block;
 }
 
-.login-iw {
-  background: #fff3;
-  border-radius: 4px;
-  width: 100%;
-  min-width: 280px;
-  max-width: 440px;
-  margin: auto;
+.block-cube {
   position: relative;
 }
 
-.login-iw h5 {
-  margin: 10px 0 0;
-  font-size: 18px;
-}
-
-.login-iw > .form {
-  padding: 10px 40px 40px;
-}
-
-.login-iw > .form .input input {
-  background: #fff9;
-}
-
-.login-iw > .form .input input::placeholder {
-  color: #7f6f73;
-}
-
-.login-iw > .form .input input:focus {
-  background: #fff;
-}
-
-.login-iw > .form .login-actions {
-  flex-flow: wrap;
-  justify-content: space-between;
-  margin: 0 -5px;
-  padding-top: 20px;
-  display: flex;
-}
-
-.login-iw > .form .login-actions .button {
-  white-space: nowrap;
-  flex: 1;
-  margin: 0 5px 1em;
-}
-
-.login-iw .version {
-  color: #fff;
-  font-size: 10px;
+.block-cube .bg-top {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  height: 10px;
+  margin: 0;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  bottom: 100%;
+  left: 5px;
+  right: -5px;
+  transform: skew(-45deg);
 }
 
-.login-title {
-  text-align: center;
-  padding: 30px 8px 20px;
+.block-cube .bg {
+  border: 2px solid #fff;
+  position: absolute;
+  inset: 0;
 }
 
-.login-title img {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  display: block;
+.block-cube .bg-right {
+  z-index: 0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  width: 10px;
+  position: absolute;
+  top: -5px;
+  bottom: 5px;
+  left: 100%;
+  transform: skew(0deg, -45deg);
+}
+
+.block-cube .bg-inner {
+  position: absolute;
+  inset: 2px;
+}
+
+.block-cube .text, .block-cube.block-input input {
+  z-index: 2;
+  position: relative;
+}
+
+.block-cube.block-input .bg-top, .block-cube.block-input .bg-right, .block-cube.block-input .bg {
+  background: #ffffff80;
+  transition: background .2s ease-in-out;
+}
+
+.block-cube.block-input:focus, .block-cube.block-input:hover {
+  transition: scale .3s;
+  scale: 1.05;
+}
+
+.block-cube.block-cube-hover {
+  cursor: pointer;
+}
+
+.block-cube.block-cube-hover:hover {
+  transition: scale .3s;
+  scale: 1.05;
 }
 
 /*# sourceMappingURL=index.4a508c1d.css.map */
