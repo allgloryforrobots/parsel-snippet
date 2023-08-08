@@ -11,52 +11,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 
 <body>
 
     <div id="animated-globe">
-        <form id="login-card" autocomplete='off' class='form'>
+
+        <div class="datagate-info block-1">
+            <div class="header">
+                <div class="version">v. 1.23.7.4</div>
+            </div>
+            <img src="static/datagate.png" alt="" height="100" width="auto">
+            <div class="info">Самая масштабная система в области образования в мире. Мы предлагаем огромный пакет приложений, упрощающих работу и учебу в образовательных учреждениях. 
+                Наша миссия - создание среды, которая позволяет раскрыть потенциал каждого ученика</div>
+        </div>
+
+
+        <form id="login-card" class="block-1" autocomplete='off' class='form'>
 
             <div class='control block-cube block-input'>
                 <input name='username' placeholder='Имя пользователя' type='text'>
-                <div class='bg-top'>
-
-                </div>
-                <div class='bg-right'>
-
-                </div>
-                <div class='bg'>
-
-                </div>
+                <div class='bg-top'></div>
+                <div class='bg-right'></div>
+                <div class='bg'></div>
             </div>
             <div class='control block-cube block-input'>
                 <input name='password' placeholder='Пароль' type='password'>
-                <div class='bg-top'>
-
-                </div>
-                <div class='bg-right'>
-
-                </div>
-                <div class='bg'>
-
-                </div>
+                <div class='bg-top'></div>
+                <div class='bg-right'></div>
+                <div class='bg'></div>
             </div>
             <button class='btn block-cube block-cube-hover' type='button'>
-                <div class='bg-top'>
-
-                </div>
-                <div class='bg-right'>
-  
-                </div>
-                <div class='bg'>
-
-                </div>
+                <div class='bg-top'></div>
+                <div class='bg-right'></div>
+                <div class='bg'></div>
                 <div class='text'>
                     Войти в систему
                 </div>
             </button>
         </form>
+    </div>
+
+    <div class="help block-2">
+        <button class='btn block-cube block-help' type='button'>
+            <div class='bg-top'></div>
+            <div class='bg-right'></div>
+            <div class='bg'></div>
+            <div class='text'>
+                Помощь
+            </div>
+        </button>
+    </div>
+
+    <div class="changes block-2">
+        <button class='btn block-cube block-help' type='button'>
+            <div class='bg-top'></div>
+            <div class='bg-right'></div>
+            <div class='bg'></div>
+            <div class='text'>
+                Изменения
+            </div>
+        </button>
     </div>
 
 </body>

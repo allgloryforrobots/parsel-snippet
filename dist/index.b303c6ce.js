@@ -1,0 +1,2 @@
+VANTA.BIRDS({el:"#animated-birds",mouseControls:!0,touchControls:!0,gyroControls:!1,minHeight:200,minWidth:200,scale:1,scaleMobile:1,backgroundColor:5143737,color1:8296429,color2:1328471}),VANTA.GLOBE({el:"#animated-globe",mouseControls:!0,touchControls:!0,gyroControls:!1,minHeight:200,minWidth:200,scale:1,scaleMobile:1,color:16777215,backgroundColor:11518975});
+//# sourceMappingURL=index.b303c6ce.js.map

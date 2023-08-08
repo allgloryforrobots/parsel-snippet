@@ -5,14 +5,52 @@
 
 *, :after, :before {
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+}
+
+.help {
+  position: absolute;
+  bottom: 2rem;
+  left: 5rem;
+}
+
+.changes {
+  position: absolute;
+  bottom: 2rem;
+  left: 12rem;
+}
+
+.datagate-info {
+  position: absolute;
+  top: 150px;
+  left: 270px;
+}
+
+.datagate-info .header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.datagate-info .header .version {
+  color: #a076f9;
+  font-size: .8rem;
+  position: absolute;
+  top: 0;
+  right: 17rem;
+}
+
+.datagate-info .info {
+  color: #fff;
+  letter-spacing: 1px;
+  width: 600px;
+  margin-left: 25px;
 }
 
 #login-card {
   border-radius: 3px;
   padding: 3rem;
   position: absolute;
-  top: 30%;
+  top: 350px;
   left: 300px;
 }
 
@@ -21,12 +59,12 @@
   padding: 64px 15px 24px;
 }
 
-.form .control {
+.control {
   margin: 0 0 24px;
 }
 
-.form .control input {
-  color: #222;
+.control input {
+  color: #a076f9;
   background: none;
   border: 0;
   width: 100%;
@@ -34,12 +72,16 @@
   font-size: 16px;
 }
 
-.form .control input:hover, .form .control input:focus {
+.control input:hover, .control input:focus {
   border: 0;
   outline: none;
 }
 
-.form .btn {
+.control input::placeholder {
+  color: #fff;
+}
+
+.btn {
   color: #fff;
   letter-spacing: .1em;
   background: none;
@@ -115,6 +157,16 @@
 .block-cube.block-cube-hover:hover {
   transition: scale .3s;
   scale: 1.05;
+}
+
+.block-cube.block-help {
+  cursor: pointer;
+  transition: scale .3s;
+  scale: .7;
+}
+
+.block-cube.block-help:hover {
+  scale: .8;
 }
 
 /*# sourceMappingURL=index.4a508c1d.css.map */
